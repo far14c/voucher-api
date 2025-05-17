@@ -1,0 +1,24 @@
+name: voucher-api
+service:
+  name: api
+  ports:
+    - port: 8080
+      protocol: http
+  routes:
+    - path: /
+      protocol: http
+  env:
+    - name: DB_HOST
+      value: "your_db_host"
+    - name: DB_PORT
+      value: "3306"
+    - name: DB_USER
+      value: "your_username"
+    - name: DB_NAME
+      value: "your_database"
+    - name: SERVER_PORT
+      value: "8080"
+  scale:
+    horizontal:
+      min: 1
+      max: 2 
