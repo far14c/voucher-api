@@ -28,6 +28,7 @@ config.production.yaml
 !config.production.example.yaml
 koyeb.yaml
 Dockerfile
+fly.toml
 
 # IDE specific files
 .idea/
